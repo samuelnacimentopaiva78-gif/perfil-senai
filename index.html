@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<!-- Informa ao navegador que este é um documento HTML5 -->
+
+<html lang="pt-br">
+<!-- Define o idioma principal da página como português do Brasil -->
+
+<head>
+    <!-- Cabeçalho do documento: contém metadados, título e links de estilo -->
+
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 (para acentuação funcionar corretamente) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz o site se ajustar automaticamente a diferentes tamanhos de tela (responsividade) -->
+
+    <title>Document</title>
+    <!-- Título que aparece na aba do navegador -->
+
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Conecta o arquivo CSS externo para estilizar a página -->
+
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <!-- Define o ícone que aparece na aba do navegador -->
+</head>
+
+<body>
+    <!-- Corpo do site: tudo que será exibido ao usuário -->
+
+    <div class="perfil">
+        <!-- Seção do perfil do usuário -->
+
+        <img src="foto.svg" alt="Foto de perfil">
+        <!-- Exibe uma imagem com texto alternativo (caso a imagem não carregue) -->
+
+        <h1>Holleo</h1>
+        <!-- Título principal (nome) -->
+
+        <h2>Dev SENAI</h2>
+        <!-- Subtítulo com a profissão ou cargo -->
+
+        <p>Bem-vindo à minha página!</p>
+        <!-- Texto de boas-vindas -->
+        
+        <div class="links">
+            <!-- Área de links e botões -->
+            <a href="#" class="btn">Instagram</a>
+            <a href="#" class="btn">TikTok</a>
+            <button class="btn" onclick="mostrarMensagem()">Clique aqui</button>
+            <p id="mensagem"></p>
+        </div>
+    </div>
+
+    <script>
+        // Função que mostra uma mensagem quando o botão é clicado
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerText = "Olá, você clicou no botão!";
+        }
+    </script>
+</body>
+</html>

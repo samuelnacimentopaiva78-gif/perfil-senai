@@ -1,0 +1,102 @@
+body {
+    /* Zera a margem do corpo do site */
+    margin: 0;
+    /* Zera o espaçamento interno do corpo */
+    padding: 0;
+    /* Altera a cor de fundo do site */
+    background-color: #07acee;
+    /* Define a fonte principal do texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Define o layout principal como flexbox */
+    display: flex;
+    /* Centraliza os elementos horizontalmente (eixo X) */
+    justify-content: center;
+    /* Centraliza os elementos verticalmente (eixo Y) */
+    align-items: center;
+    /* Define altura total da tela (100% da altura da janela) */
+    height: 100vh;
+}
+
+/* Seção de perfil (foto, nome, etc.) */
+.profile {
+    /* Centraliza o texto dentro do contêiner */
+    text-align: center;
+    /* Define a cor padrão do texto */
+    color: rgb(73, 72, 72);
+}
+
+/* Estilo da imagem do perfil */
+.profile img {
+    /* Define largura fixa da imagem */
+    width: 120px;
+    /* Define altura fixa da imagem */
+    height: 120px;
+    /* Deixa a imagem em formato circular */
+    border-radius: 50%;
+    /* Garante que a imagem preencha o espaço corretamente */
+    object-fit: cover;
+    /* Espaçamento abaixo da imagem */
+    margin-bottom: 15px;
+}
+
+/* Estilo do nome principal (título) */
+.profile h1 {
+    /* Define tamanho da fonte do nome */
+    font-size: 24px;
+    /* Espaçamento inferior do título */
+    margin-bottom: 5px;
+}
+
+/* Estilo do subtítulo ou cargo */
+.profile h2 {
+    /* Define tamanho da fonte */
+    font-size: 16px;
+    /* Define peso da fonte (semi-negrito) */
+    font-weight: 600;
+    /* Espaçamento inferior do subtítulo */
+    margin-bottom: 10px;
+}
+
+/* Estilo para parágrafos dentro do perfil */
+.profile p {
+    /* Define tamanho da fonte */
+    font-size: 14px;
+    /* Espaçamento inferior entre parágrafos */
+    margin-bottom: 20px;
+}
+
+/* Container dos botões de links */
+.links .btn {
+    /* Exibe cada botão como bloco (linha completa) */
+    display: block;
+    /* Define a largura total do botão */
+    width: 100%;
+    /* Define cor de fundo branca */
+    background-color: white;
+    /* Define a cor do texto */
+    color: #2d2a52;
+    /* Remove o sublinhado do link */
+    text-decoration: none;
+    /* Define o espaçamento interno vertical */
+    padding: 10px 0;
+    /* Arredonda os cantos dos botões */
+    border-radius: 10px;
+    /* Espaçamento inferior entre os botões */
+    margin-bottom: 10px;
+    /* Define a transição suave ao passar o mouse */
+    transition: background 0.3s;
+    /* Centraliza o texto dentro do botão */
+    text-align: center;
+}
+
+/* Efeito ao passar o mouse nos botões */
+.links .btn:hover {
+    /* Muda a cor de fundo quando o cursor está sobre o botão */
+    background-color: #ddd;
+}
+
+/* Mensagem de erro ou aviso */
+#mensagem {
+    /* Define cor vermelha para mensagens */
+    color: red;
+}
